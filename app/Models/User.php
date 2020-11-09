@@ -11,6 +11,10 @@ class User extends Authenticatable
 {
     use HasFactory, Notifiable;
 
+    protected $primaryKey = 'npp';
+
+    public $incrementing = false;
+
     /**
      * The attributes that are mass assignable.
      *
